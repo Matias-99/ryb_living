@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-bright": "#fbf9f6", "secondary-container": "#fea589", "primary-fixed": "#d5e7d9", "error": "#ba1a1a", "surface-variant": "#e4e2df", "on-tertiary-container": "#1dbd5c", "surface-container-high": "#eae8e5", "primary-fixed-dim": "#bacbbd", "on-surface": "#1b1c1a", "on-primary": "#ffffff", "background": "#fbf9f6", "inverse-primary": "#bacbbd", "on-tertiary": "#ffffff", "on-primary-container": "#98a99c", "secondary-fixed-dim": "#ffb59e", "surface-container-lowest": "#ffffff", "on-secondary-container": "#783923", "on-primary-fixed": "#101f16", "secondary": "#904b34", "inverse-surface": "#30312f", "inverse-on-surface": "#f2f0ed", "secondary-fixed": "#ffdbd0", "tertiary-fixed-dim": "#4fe17b", "surface-container-highest": "#e4e2df", "on-primary-fixed-variant": "#3b4a40", "on-error": "#ffffff", "tertiary-fixed": "#6ffe94", "on-secondary-fixed": "#390b00", "surface-dim": "#dbdad7", "tertiary": "#002c10", "on-tertiary-fixed-variant": "#005323", "surface": "#fbf9f6", "on-error-container": "#93000a", "primary-container": "#2f3e34", "tertiary-container": "#00451c", "outline-variant": "#c3c8c2", "on-surface-variant": "#434844", "error-container": "#ffdad6", "on-secondary-fixed-variant": "#73341f", "on-background": "#1b1c1a", "outline": "#737873", "primary": "#1a281f", "on-secondary": "#ffffff", "surface-container-low": "#f5f3f0", "surface-container": "#efeeeb", "surface-tint": "#526257", "on-tertiary-fixed": "#00210a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "space-md": "1rem", "gutter-mobile": "1rem", "margin-mobile": "1.25rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-lg": "1.5rem", "margin": "3rem", "space-xl": "2.5rem" }, "fontFamily": { "body-sm": ["Plus Jakarta Sans"], "display-mobile": ["Newsreader"], "body-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "display": ["Newsreader"], "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "headline-lg": ["Newsreader"] }, "fontSize": { "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-lg-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "400" }], "display": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.04em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }] } } } };</script></head><body class="bg-surface font-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between gap-space-xs"><div class="flex items-center gap-space-sm"><img alt="Lumina Cortinas Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB5rYY5K2GVS2VJLCVkwvmDchpDymWJUoTAW-Z4kOlk10BjRgqkWzti9YQtC12hy22XEOHXzN05WTkIkkFHfb9VuM8g2FR9oc5CCH9ry9IHzFT-dIOHuR9H7mzX4-OJnaFEU8Ab6g6WqF_Hbt5mOOXhlYa7akG3GAbxr7OFpmKfhID_XZTiPgq3dH9HKvcEpOhLqF9e0dOjoI8MSWybzBpg9WaFT_57mG1lv4EvLvzbTYO3UAdOyzT7Tw"/><span class="font-headline-sm text-headline-sm text-primary tracking-tight">Lumina Cortinas</span></div><div class="flex items-center gap-space-xs"><div class="hidden sm:flex items-center gap-1 px-2.5 py-1 rounded bg-secondary-fixed text-on-secondary-fixed"><span class="material-symbols-outlined text-[16px]">straighten</span><span class="font-label-sm text-label-sm font-semibold">Medición Gratis</span></div><a class="min-h-[44px] min-w-[44px] px-3 py-1.5 flex items-center gap-1.5 rounded bg-tertiary text-on-tertiary active:scale-95 transition-transform" href="https://wa.me/" target="_blank"><span class="material-symbols-outlined text-[18px]">chat</span><span class="font-label-md text-label-md hidden xs:inline">WhatsApp</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="flex flex-col relative w-full pt-16 pb-24 bg-surface min-h-screen"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="flex flex-col px-margin-mobile pt-space-lg pb-space-xl gap-space-lg">
+<!-- Value Badge -->
+<div class="inline-flex items-center gap-space-xs self-start px-3 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[16px] text-secondary">star</span>
+<span class="font-label-sm text-label-sm font-semibold tracking-wide uppercase">Fabricación a medida &amp; Instalación en 48hs</span>
+</div>
+<!-- Editorial Title & Subtitle -->
+<div class="flex flex-col gap-space-sm">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight leading-tight">
+        Transformá la luz de tu hogar con cortinas a medida que combinan diseño y confort
+      </h1>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+        Control solar térmico, privacidad absoluta y elegancia contemporánea. Asesoramiento personalizado y visita de medición 100% sin cargo en tu domicilio.
+      </p>
+</div>
+<!-- Hero Photography Container with Floating Micro-Badge -->
+<div class="relative w-full rounded-xl overflow-hidden shadow-md aspect-[4/3] bg-surface-container">
+<img alt="Living contemporáneo y luminoso con cortinas roller screen microperforadas y luz difusa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZfpSvpUqZZnSRqhyy_QsxpgPxw6X7vkLfokZrJcC9vu7EAGGS9BiFVrQHd3NGcWtjL1o3sQJmPuiLD3tVmuBClvogHkRsyobWzTw7YNFwzCWkOIvKQY_yMMAOCg0r7GNkCFPu7hM85cxB8LvV0ny4-BbQa0ac1TbRxJtHzyRCmRk6HBBo5vTe3UzbGNUZg9g8P7ZQi5Tcn0YDz1bCemjCC7-S-fJmdBhJo2IObC6tSctrV1INiwlmFw"/>
+<div class="absolute bottom-3 left-3 right-3 p-3 rounded-lg bg-surface/90 backdrop-blur-md flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-full bg-on-tertiary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-primary font-semibold">Telas Screen 5% UV</span>
+</div
+<span class="font-label-sm text-label-sm text-secondary font-bold">Luz natural &amp; confort</span>
+</div>
+</div>
+<!-- Conversion Box & Fast CTA -->
+<div class="flex flex-col gap-space-xs">
+<a class="w-full py-4 px-6 rounded-lg bg-tertiary text-on-tertiary flex items-center justify-center gap-2.5 shadow-lg active:scale-95 transition-all text-center" href="https://wa.me/" target="_blank">
+<span class="material-symbols-outlined text-[22px]">chat</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide">Pedir Cotización y Medición Gratis</span>
+</a>
+<div class="flex items-center justify-center gap-1.5 text-on-surface-variant pt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">bolt</span>
+<span class="font-label-sm text-label-sm">Respuesta promedio: menos de 5 minutos</span>
+</div>
+</div>
+<!-- Trust Strip Cards -->
+<div class="p-space-md rounded-xl bg-surface-container-low flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-on-surface">4.9/5 estrellas en Google</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Más de 650 hogares transformados con satisfacción plena.</p>
+<div class="flex flex-col gap-1.5 pt-1">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">Medición a domicilio sin costo</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-on-tertiary-container">verified</span>
+<span class="font-body-sm text-body-sm text-on-surface font-medium">5 años de garantía escrita</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 2. VALUE PROPOSITION / BENEFICIOS -->
+<section class="flex flex-col px-margin-mobile py-space-xl bg-surface-container-low gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Beneficios Exclusivos</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+        La tranquilidad de renovar tus espacios sin sorpresas ni demoras
+      </h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Benefit 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[22px]">architecture</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Medición y Asesoría a Domicilio Sin Cargo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Llevamos muestrarios reales de telas para que elijas con la luz exacta de tu ventana y la orientación de tu espacio.
+        </p>
+</div>
+<!-- Benefit 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[22px]">thermostat</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Aislamiento Térmico &amp; Control UV</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Reducí hasta un 30% el gasto en climatización protegiendo tus pisos y muebles de la decoloración solar.
+        </p>
+</div>
+<!-- Benefit 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-primary-fixed flex items-center justify-center text-primary mb-1">
+<span class="material-symbols-outlined text-[22px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Instalación Express en 48hs</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Fabricación milimétrica propia con colocación limpia, rápida y sin obras molestas ni escombros.
+        </p>
+</div>
+<!-- Benefit 4 -->
+<div class="p-space-lg rounded-xl bg-surface-container-lowest shadow-sm flex flex-col gap-space-xs">
+<div class="w-10 h-10 rounded-lg bg-secondary-fixed flex items-center justify-center text-secondary mb-1">
+<span class="material-symbols-outlined text-[22px]">workspace_premium</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary">Garantía Escrita por 5 Años</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Telas importadas de alta densidad y mecanismos reforzados testeados para máxima suavidad y durabilidad.
+        </p>
+</div>
+</div>
+</section>
+<!-- 3. CATÁLOGO / TIPOS DE CORTINAS -->
+<section class="flex flex-col px-margin-mobile py-space-xl gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Colección Lumina</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+        Encontrá la cortina perfecta para cada ambiente
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Modelos diseñados con arquitectura textil para adaptarse al ritmo diario de tu familia.
+      </p>
+</div>
+<!-- Product Card 1: Blackout -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img alt="Dormitorio minimalista moderno con cortinas roller blackout en tono oscuro garantizando oscuridad total" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3b6wpxE03ciq1sWE0id2gpNNCSnboNJVaYIeKz34SHqUBzatAaypYibrxUjCxPpA9RLCYRItBcJtG9p4rYykbQ_EwMw_MIELLMBsbdRxAgnmftUSxRYupe1nVGcSIHS_NgKUc3eldktYRo3unFhbw9suSpobOKFIbaM7bRIsbRACTC1VMb6y37zmZl4tCiDtnYNQKKgvY6dLcw8YhqGGI5FkRJk3W2TKquvlaMb7zPEtnPE8lyL9YnA"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Oscuridad total garantizada</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Dormitorios &amp; Home Office</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Roller Blackout Premium</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Bloqueo 100% de luz solar para un descanso ininterrumpido. Aislamiento acústico y térmico superior con tela vinílica de 4 capas.
+        </p>
+<a class="w-full py-3 px-4 rounded bg-primary-container text-on-primary font-label-md text-label-md font-semibold text-center mt-1 active:scale-95 transition-all" href="https://wa.me/" target="_blank">
+          Cotizar Blackout
+        </a>
+</div>
+</div>
+<!-- Product Card 2: Screen -->
+<div class="rounded-xl overflow-hidden bg-surface-container-low shadow-sm flex flex-col">
+<div class="relative w-full aspect-[16/10] bg-surface-container">
+<img alt="Living moderno con cortinas roller screen que permiten vista al jardín y filtran la luz solar directa" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZfpSvpUqZZnSRqhyy_QsxpgPxw6X7vkLfokZrJcC9vu7EAGGS9BiFVrQHd3NGcWtjL1o3sQJmPuiLD3tVmuBClvogHkRsyobWzTw7YNFwzCWkOIvKQY_yMMAOCg0r7GNkCFPu7hM85cxB8LvV0ny4-BbQa0ac1TbRxJtHzyRCmRk6HBBo5vTe3UzbGNUZg9g8P7ZQi5Tcn0YDz1bCemjCC7-S-fJmdBhJo2IObC6tSctrV1INiwlmFw"/>
+<div class="absolute top-3 left-3 px-2.5 py-1 rounded bg-inverse-surface/85 backdrop-blur-sm text-inverse-on-surface">
+<span class="font-label-sm text-label-sm font-semibold">Luz natural sin encandilar</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Livings, Comedores &amp; Oficinas</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Roller Screen Solar 5% &amp; 1%</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Filtrado suave de luz natural con visión hacia el exterior sin perder privacidad de día. Reduce el reflejo en pantallas de TV y monitores.
+        </p>
+<a class="w-full py-3 px-4 rounded bg-primary-container text-on-primary font-label-md text-label-md font-semibold text-center mt-1 active:scale-95 transition-all" href="https://wa.me/" target="_blank">
+          Cotizar Screen
+        </a>
+</div>
+</div>
+<!-- Product Card 3: Dúo / Eclipse -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">tune</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Espacios Multifunción</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Dúo / Eclipse Noche &amp; Día</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Bandas horizontales translúcidas y opacas que se superponen para graduar la luminosidad y visibilidad al milímetro con un solo cordón o motor.
+      </p>
+<a class="w-full py-2.5 px-4 rounded bg-surface-container-highest text-primary font-label-md text-label-md font-semibold text-center active:scale-95 transition-all" href="https://wa.me/" target="_blank">
+        Consultar por Dúo Eclipse
+      </a>
+</div>
+<!-- Product Card 4: Motorizadas -->
+<div class="rounded-xl bg-surface-container-low p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[28px]">nest_remote_comfort_sensor</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary font-semibold">Techos Altos &amp; Domótica</span>
+<h3 class="font-headline-sm text-headline-sm text-primary">Cortinas Inteligentes Motorizadas</h3>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Motores ultra silenciosos a batería de litio o 220v. Accionamiento desde control remoto, app en smartphone o comandos por voz con Alexa y Google Home.
+      </p>
+<a class="w-full py-2.5 px-4 rounded bg-surface-container-highest text-primary font-label-md text-label-md font-semibold text-center active:scale-95 transition-all" href="https://wa.me/" target="_blank">
+        Ver Opciones de Motorización
+      </a>
+</div>
+</section>
+<!-- 4. CÓMO TRABAJAMOS / PROCESO -->
+<section class="flex flex-col px-margin-mobile py-space-xl bg-surface-container-low gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Metodología Simple</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+        Tu nuevo ambiente en 4 simples pasos
+      </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Acompañamiento integral de principio a fin, sin complicaciones para vos.
+      </p>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Step 1 -->
+<div class="flex gap-space-md items-start p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+          1
+        </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Medidas aproximadas por WhatsApp</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Envianos alto y ancho estimativo de tu ventana. En menos de 5 minutos te enviamos un presupuesto exacto y orientativo.
+          </p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="flex gap-space-md items-start p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+          2
+        </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Visita técnica sin cargo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Nuestro asesor va a tu hogar a rectificar medidas al milímetro con muestrario completo de texturas y colores.
+          </p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="flex gap-space-md items-start p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+          3
+        </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Fabricación milimétrica</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Confección con estándares premium de costura y termosellado con perfilería reforzada de aluminio.
+          </p>
+</div>
+</div>
+<!-- Step 4 -->
+<div class="flex gap-space-md items-start p-space-md rounded-xl bg-surface-container-lowest shadow-sm">
+<div class="w-8 h-8 rounded-full bg-secondary text-on-secondary flex items-center justify-center font-label-md text-label-md font-bold shrink-0">
+          4
+        </div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-primary">Instalación limpia y garantizada</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            En 48 a 72hs tus cortinas quedan colocadas, calibradas y listas para usar, respaldadas por 5 años de garantía escrita.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. PRUEBA SOCIAL / TESTIMONIOS -->
+<section class="flex flex-col px-margin-mobile py-space-xl gap-space-lg">
+<div class="flex flex-col gap-space-xs">
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase tracking-wider">Opiniones Reales</span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">
+        Lo que dicen quienes ya disfrutan de sus nuevos ambientes
+      </h2>
+</div>
+<div class="flex flex-col gap-space-md">
+<!-- Testimonial 1 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic">
+          “Excelente servicio. Vinieron a medir con el muestrario, me asesoraron con el color justo para mi living y en 3 días ya estaban colocadas. ¡Quedaron soñadas!”
+        </p>
+<div class="flex items-center gap-2.5 pt-2">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-md text-label-md">
+            MR
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Mariana R.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Palermo, CABA</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic">
+          “El blackout para la habitación de los chicos es increíble, no entra un rayo de sol. La atención por WhatsApp fue impecable desde el primer minuto.”
+        </p>
+<div class="flex items-center gap-2.5 pt-2">
+<div class="w-9 h-9 rounded-full bg-secondary-fixed flex items-center justify-center text-secondary font-bold font-label-md text-label-md">
+            CM
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Carlos M.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Vicente López</span>
+</div>
+</div>
+</div>
+<!-- Testimonial 3 -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-sm flex flex-col gap-space-sm">
+<div class="flex text-secondary">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface leading-relaxed italic">
+          “Modernizamos todas las cortinas de la oficina con sistema motorizado. Impecable terminación y cumplimiento puntual de los plazos.”
+        </p>
+<div class="flex items-center gap-2.5 pt-2">
+<div class="w-9 h-9 rounded-full bg-primary-fixed flex items-center justify-center text-primary font-bold font-label-md text-label-md">
+            SP
+          </div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Arq. Sofía P.</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Belgrano, CABA</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 6. CIERRE & LLAMADO A LA ACCIÓN FINAL -->
+<section class="flex flex-col px-margin-mobile pb-space-xl pt-space-md">
+<div class="p-space-lg rounded-xl bg-primary text-on-primary flex flex-col gap-space-md shadow-xl relative overflow-hidden">
+<!-- Glow ambient background -->
+<div class="absolute -right-16 -top-16 w-48 h-48 rounded-full bg-secondary/20 blur-3xl pointer-events-none"></div>
+<!-- Badge Promoción -->
+<div class="inline-flex items-center gap-1.5 self-start px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container">
+<span class="material-symbols-outlined text-[16px]">local_fire_department</span>
+<span class="font-label-sm text-label-sm font-bold uppercase tracking-wider">Promoción del mes</span>
+</div>
+<!-- Main Heading & Text -->
+<div class="flex flex-col gap-space-xs z-10">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile tracking-tight text-surface-bright">
+          ¿Listo para darle calidez y privacidad a tus ventanas?
+        </h2>
+<p class="font-body-md text-body-md text-primary-fixed-dim leading-relaxed">
+          Solicitá hoy tu presupuesto por WhatsApp y obtené <strong class="text-surface-bright font-semibold">20% OFF en la colocación</strong> + Medición bonificada en tu domicilio.
+        </p>
+</div>
+<!-- Giant Interactive WhatsApp CTA -->
+<div class="flex flex-col gap-2 z-10 pt-2">
+<a class="w-full py-4 px-6 rounded-lg bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center gap-3 shadow-lg active:scale-95 transition-all text-center" href="https://wa.me/" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="font-label-md text-label-md font-bold tracking-wide">Chatear por WhatsApp y Congelar Descuento</span>
+</a>
+<span class="font-label-sm text-label-sm text-center text-primary-fixed-dim">
+          Sin compromiso de compra. Respuesta inmediata por asesores técnicos.
+        </span>
+</div>
+<!-- Extra Trust Details -->
+<div class="pt-space-sm border-t border-primary-container flex flex-col gap-2 z-10 text-primary-fixed-dim">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">location_on</span>
+<span class="font-body-sm text-body-sm">Zona de cobertura: CABA y GBA · Envíos a todo el país</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-tertiary-fixed">verified_user</span>
+<span class="font-body-sm text-body-sm">5 Años de Garantía Escrita en Mecanismos y Telas</span>
+</div>
+</div>
+</div>
+</section>
+</div></main><div class="fixed bottom-24 right-margin-mobile z-50 pointer-events-auto"><a class="flex items-center gap-2 pl-3.5 pr-4 py-3 rounded-full bg-tertiary text-on-tertiary shadow-[0_12px_32px_-4px_rgba(47,62,52,0.2)] active:scale-95 transition-all" href="https://wa.me/" target="_blank"><span class="material-symbols-outlined text-[24px]">chat</span><span class="font-label-md text-label-md tracking-wide">Cotizar por WhatsApp</span></a></div><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(47,62,52,0.06)]" data-active-classes="text-primary font-semibold"><div class="flex justify-around items-center h-16 px-space-xs"><a aria-current="page" class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 transition-colors text-primary font-semibold" data-path="landing" href="#"><span class="material-symbols-outlined text-[22px]">window</span><span class="font-label-sm text-label-sm">Cortinas</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 text-on-surface-variant hover:text-on-surface transition-colors" data-path="muestrario-telas" href="#"><span class="material-symbols-outlined text-[22px]">texture</span><span class="font-label-sm text-label-sm">Telas</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 text-on-surface-variant hover:text-on-surface transition-colors" data-path="calculador-medidas" href="#"><span class="material-symbols-outlined text-[22px]">calculate</span><span class="font-label-sm text-label-sm">Cotizador</span></a><a class="flex flex-col items-center justify-center gap-0.5 min-w-[44px] min-h-[44px] px-2 text-on-surface-variant hover:text-on-surface transition-colors" data-path="medicion-gratis" href="#"><span class="material-symbols-outlined text-[22px]">home_pin</span><span class="font-label-sm text-label-sm">Medición</span></a></div></nav></body></html>
